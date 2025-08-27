@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Remover</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Remove Background Instantly</h1>
+    <p>Upload an image and let AI remove the background for you</p>
+    
+    <div class="upload-section">
+      <input type="file" id="fileInput" accept="image/*">
+      <button id="uploadBtn" onclick="uploadImage()">Remove Background</button>
+    </div>
+    
+    <div class="images-section">
+      <div class="image-container">
+        <h3>Original Image</h3>
+        <img id="preview" alt="Preview">
+      </div>
+      <div class="image-container">
+        <h3>Result</h3>
+        <img id="result" alt="Result">
+      </div>
+    </div>
+    
+    <!-- Before/After Slider Section -->
+    <div class="slider-section" id="sliderSection" style="display: none;">
+      <h3>Before / After Comparison</h3>
+      <div class="image-slider">
+        <div class="slider-container">
+          <img id="sliderBefore" alt="Before" class="slider-image">
+          <img id="sliderAfter" alt="After" class="slider-image">
+          <div class="slider-divider" id="sliderDivider">
+            <div class="slider-handle"></div>
+          </div>
+        </div>
+        <div class="slider-labels">
+          <span>Before</span>
+          <span>After</span>
+        </div>
+        <div class="slider-instructions">
+          💡 Drag the slider left/right or click anywhere to compare before and after
+        </div>
+      </div>
+    </div>
+    
+    <div id="status" style="display: none;"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
