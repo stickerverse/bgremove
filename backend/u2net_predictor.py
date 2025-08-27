@@ -13,7 +13,6 @@ class U2NETPredictor:
         try:
             # Try working U²-Net repositories
             repositories = [
-                "BritishWerewolf/U-2-Net",
                 "damli/u2net",
                 "niraj128/u2net",
                 "mikestealth/u2net"

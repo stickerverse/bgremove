@@ -1,0 +1,12 @@
+# Python
+**/__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Logs
+app_output.log
+
+# Model Cache
+backend/model_cache/
